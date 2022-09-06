@@ -1,0 +1,86 @@
+:root {
+  --VeryDarkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+  --DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+  --LeagueSpartan: 'League Spartan', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 15px;
+  font-family: var(--LeagueSpartan);
+}
+
+main.container {
+  background-color:var(--White) ;
+  max-width: 330px;
+  margin: auto;
+  padding: 1rem;
+  border: 1px solid grey;
+}
+
+.sec-review {
+  padding: 2rem 0;
+
+}
+.sec-review h1 {
+  color: var(--VeryDarkMagenta);
+  font-size: 700;
+}
+.sec-review p {
+  color: var(--DarkGrayishMagenta);
+}
+
+.sec-rating {
+  padding: 2rem 0;
+}
+
+.card {
+  background-color: var(--VeryDarkMagenta);
+  border-radius: 10px;
+  margin: 1rem 0;
+  padding: 2rem;
+  height: 15rem;
+}
+
+.card-title{
+  display: flex;
+  padding-bottom: 1.5rem;
+}
+.card-name {
+  width: 75%;
+}
+.card h2 {
+  color: var(--White);
+  font-size: 500;
+  padding-bottom: 0.5rem;
+}
+.card h3 {
+  color: var(--SoftPink);
+  opacity: 0.5;
+}
+
+.card-img {
+  width: 25%;
+}
+.card-img img{
+  width: 2.5rem;
+  border-radius: 50px;
+}
+
+.card p {
+  color: var(--White);
+  line-height: 1.5rem;
+}
+
+.sec-comments {
+  padding: 2rem 0;
+}
+

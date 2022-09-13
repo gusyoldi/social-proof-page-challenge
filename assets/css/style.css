@@ -19,10 +19,11 @@ body{
 }
 
 main.container {
-  background-color:var(--White) ;
+  background: url('../../assets/images/bg-pattern-bottom-desktop.svg') ;
+  background-repeat: no-repeat;
   max-width: 480px;
   margin: auto;
-  padding: 2rem;
+  padding: 0.8rem;
 }
 
 .sec-review {
@@ -69,7 +70,7 @@ main.container {
   background-color: var(--VeryDarkMagenta);
   border-radius: 10px;
   margin: 1rem 0;
-  padding: 1.2rem;
+  padding: 2rem;
   
 }
 
@@ -123,61 +124,86 @@ main.container {
   
   
   main.container {
-    max-width: 100%;
+    max-width: 1440px;
     display: flex;
     flex-wrap: wrap;
+    padding: 2rem;
     border: 1px solid #000;
     
   }
-
   .sec-review {
-    width: 40%;
+    width: 30%;
+    text-align: start;
   }
+  .sec-review h1 {
+    font-size: 2.5rem;
+  }
+  .sec-review p {
+    line-height: 1.3rem;
+  }
+
+  /* Rating */
 
   .sec-rating {
-    width: 60%;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   width: 60%;
+   margin: auto;
   }
-  .row {
-    margin: 0.5rem 0;
-    padding: 0.3rem 1.5rem;
-    height: 10%;
+
+  .content-rating {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    max-width: 100%;
+    margin: 0 auto
+
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 1rem;
+  }
+  .row-1 {
+    align-self: flex-start;
   }
   .row-2 {
-    margin-left: 1.5rem;
+    align-self: center;
+    
   }
   .row-3 {
-    margin-left: 3rem;
+    align-self: flex-end;
+    
   }
-  .row-icon {
-    padding: 1rem;
+  .row-icon{
+    padding: 0 1rem;
   }
+
+/* Coments */
 
   .sec-comments {
     width: 100%;
+    padding: 0  ;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
   }
   .card{
-    margin: auto 0.5rem;
-    width: 32%;
-    height: 60%;
+    margin: 0 0.5rem;
+    padding: 2rem;
+    height: 300px;
+    
     
   }
   .card-1 {
+    /* align-self: flex-start; */
     margin-bottom: 3rem;
   }
   .card-2 {
+    /* align-self: center; */
     margin-bottom: 2rem;
   }
   .card-3 {
+    /* align-self: flex-end; */
     margin-bottom: 1rem;
   }
 }
